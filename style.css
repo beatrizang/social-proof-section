@@ -13,6 +13,10 @@
     font-family: 'Spartan', sans-serif;
 }
 
+a{
+    color: var(--soft-pink);
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -27,6 +31,7 @@ body{
 
 .container{
     display: flex;
+    flex-direction: column;
     top: 50%;
     left: 50%;
 
@@ -145,4 +150,71 @@ p{
 .top h6{
     color: var(--soft-pink);
     font-weight: 400;
+}
+
+footer{
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+footer p{
+    color: var(--very-dark-magenta);
+}
+
+@media only screen and (max-width: 1260px){
+
+
+     body{
+        height: 100%;
+        flex-direction: column;
+        height: 100%;
+        background-image: url("images/bg-pattern-top-mobile.svg"),
+                          url("images/bg-pattern-bottom-mobile.svg");
+     }
+
+     .all{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+     .text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+
+     .introduction{
+        width:100%;
+     }
+
+     .ratings{
+         margin-top: 2em;
+     }
+
+     .rating{
+        width: 100%;
+        padding: 1.5em;
+        flex-direction: column;
+        justify-content: center;
+     }
+     .rating2{
+        margin-left: 0;
+     }
+     .rating3{
+         margin-left: 0;
+     }
+
+     .testimonials{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .testimonial2{
+         margin-left: 0;
+         margin-top: 30px;
+     }
+
+     .testimonial3{
+         margin-left: 0;
+     }
 }
