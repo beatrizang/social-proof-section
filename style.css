@@ -1,0 +1,148 @@
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+                      url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position:  -20% 0% ,150% -70% ;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    top: 50%;
+    left: 50%;
+
+}
+
+.text{
+    display: flex;
+    margin-bottom: 3em;
+    align-items: center;
+
+}
+.introduction{
+    width: 25vw;
+    
+}
+
+
+.introduction h1{
+    color: var(--very-dark-magenta);
+    padding-bottom: 10px;
+}
+.introduction p{
+    color: var(--dark-grayish-magenta);
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--very-dark-magenta);
+    
+}
+
+.rating{
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grayish-magenta);
+    padding-left:  50px;
+    padding-right:  50px;
+    border-radius: 0.3em;
+    margin: 5px;
+}
+.rating h5 {
+    padding-left: 25px;
+}
+
+.stars{
+    justify-content: space-around;
+}
+
+.rating1{
+    margin-left: 0em;
+}
+
+.rating2{
+    margin-left: 10em;
+}
+
+.rating3{
+    margin-left: 20em;
+}
+.testimonials{
+    display: flex;
+    
+}
+
+.testimonial{
+    background-color: var(--very-dark-magenta);
+    width: 22em;
+    height: 15em;
+    border-radius: 8px;
+    padding: 2em;
+
+    
+}
+
+.testimonial2{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.testimonial3{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.top img{
+    border-radius: 50%;
+    transform: scale(0.5);
+    padding-left: 0;
+}
+
+.top h5,p{
+  color: var(--white);
+}
+
+.top p{
+    padding-left: 2em;
+
+}
+
+p{
+    font-size: 15px;
+}
+
+.top h6{
+    color: var(--soft-pink);
+    font-weight: 400;
+}
